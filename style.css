@@ -66,21 +66,6 @@ body {
   cursor: pointer;
 }
 
-@media (min-width: 963px) {
-  .profile-section h1 {
-    font-size: 2rem;
-    padding: 10px;
-    margin: 20px auto;
-  }
-}
-@media (max-width: 412px) {
-  .profile-section h1 {
-    font-size: 0.8rem;
-    padding: 10px 0;
-    margin: 10px auto;
-  }
-}
-
 .profile-section p {
   font-size: 1rem;
   padding: 10px 5px;
@@ -95,22 +80,6 @@ body {
   padding: 10px;
   margin: 20px auto;
   transition: box-shadow 0.5s;
-}
-
-@media (min-width: 1064px) {
-  .profile-section h2 {
-    font-size: 1.25rem;
-    padding: 10px;
-    margin: 20px auto;
-  }
-}
-
-@media (max-width: 412px) {
-  .profile-section h2 {
-    font-size: 0.6rem;
-    padding: 8px;
-    margin: 10 auto;
-  }
 }
 
 .profile-section h2:hover {
@@ -188,4 +157,35 @@ button:hover {
 
 #skill-list.hide {
   max-height: 0;
+}
+
+@media screen and (max-width:600px) {
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    background-color: #16425b;
+    color: #fff;
+    border-radius: 0;
+    transition: box-shadow 0.5s;
+    overflow: hidden;
+  }
+
+  .profile-section {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-section {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #e9ecef;
+    color: #000814;
+  }
+
 }
